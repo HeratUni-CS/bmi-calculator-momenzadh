@@ -1,6 +1,7 @@
-import 'package:bmi_app_calculator/reusable_card.dart';
+import 'package:bmi_app_calculator/composer/bottom_button.dart';
+import 'package:bmi_app_calculator/composer/reusable_card.dart';
 import 'package:flutter/material.dart';
-import 'constant.dart';
+import '/constant.dart';
 
 class ResultPage extends StatelessWidget {
   const ResultPage({Key? key}) : super(key: key);
@@ -16,6 +17,8 @@ class ResultPage extends StatelessWidget {
         children: [
           Expanded(
             child:Container(
+              alignment: Alignment.bottomLeft,
+              padding: EdgeInsets.all(15),
             child: Text('Your Result',style: KTitleTextStyle),
           ),
           ),
@@ -41,14 +44,21 @@ class ResultPage extends StatelessWidget {
                     Text('18.5 - 35 KG/M2',style: KBodyTextStyle),
                   ],
                 ),
-                Text(
-                    'You Have a Normal weight , Good Job!',
-                    style: KBodyTextStyle,
-                  textAlign: TextAlign.center,
+                Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Text(
+                      'You Have a Normal weight , Good Job!',
+                      style: KBodyTextStyle,
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ],
             ),
-          ))
+          ),
+          ),
+          BottomButton(title: 'Re-Calculate', onTap:(){
+            Navigator.pop(context);
+          }),
         ],
       ),
     );
