@@ -12,3 +12,8 @@ const KNumberTextStyle = TextStyle(
   fontWeight: FontWeight.w900
 );
 
+const KLargeBottomTextStyle = TextStyle(
+    fontSize: 25,
+  fontWeight: FontWeight.bold
+),
+
