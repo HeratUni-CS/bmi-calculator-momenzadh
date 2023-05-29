@@ -161,7 +161,7 @@ class _InputPageState extends State<InputPage> {
                             });
                           },),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -173,14 +173,14 @@ class _InputPageState extends State<InputPage> {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => ResultPage()),);
               },
               child: Container(
-                child: Text(
-                    'CALCULATE',
-                  style: KLargeBottomTextStyle,
-                ),
                 color: KBottomContainerColor,
                 margin: EdgeInsets.only(top: 10),
                 width: double.infinity,
                 height: KBottomContainerHeight,
+                child: Text(
+                    'CALCULATE',
+                  style: KLargeBottomTextStyle,
+                ),
               ),
             ) ,
           ],

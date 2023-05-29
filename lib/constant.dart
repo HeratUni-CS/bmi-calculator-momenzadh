@@ -15,5 +15,18 @@ const KNumberTextStyle = TextStyle(
 const KLargeBottomTextStyle = TextStyle(
     fontSize: 25,
   fontWeight: FontWeight.bold
-),
+);
 
+const KTitleTextStyle = TextStyle(
+  fontSize: 50,
+  fontWeight: FontWeight.bold
+);
+const KResultTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontWeight: FontWeight.bold,
+  fontSize: 22
+);
+const KBMITextStyle = TextStyle(
+    fontSize: 100,
+  fontWeight: FontWeight.w900
+);
