@@ -1,6 +1,6 @@
-import 'package:bmi_app_calculator/constant.dart';
 import 'package:bmi_app_calculator/reusable_card.dart';
 import 'package:flutter/material.dart';
+import 'constant.dart';
 
 class ResultPage extends StatelessWidget {
   const ResultPage({Key? key}) : super(key: key);
@@ -37,8 +37,14 @@ class ResultPage extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    Text('Normal Range'),
+                    Text('Normal BMI Range',style: KGrayTextStyle),
+                    Text('18.5 - 35 KG/M2',style: KBodyTextStyle),
                   ],
+                ),
+                Text(
+                    'You Have a Normal weight , Good Job!',
+                    style: KBodyTextStyle,
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),

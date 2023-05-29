@@ -30,3 +30,10 @@ const KBMITextStyle = TextStyle(
     fontSize: 100,
   fontWeight: FontWeight.w900
 );
+const KGrayTextStyle = TextStyle(
+  fontSize: 22,
+  color: Colors.grey
+);
+const KBodyTextStyle = TextStyle(
+  fontSize: 22,
+);
