@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import '/constant.dart';
 
 class ResultPage extends StatelessWidget {
-  const ResultPage({Key? key}) : super(key: key);
+  final String? bmiResult,resultText,interpretation;
+  ResultPage({@required this.bmiResult,@required this.resultText,@required this.interpretation});
 
   @override
   Widget build(BuildContext context) {
@@ -31,11 +32,11 @@ class ResultPage extends StatelessWidget {
 
               children: [
                 Text(
-                    'Normal',
+                    resultText!.toUpperCase(),
                     style: KResultTextStyle
                 ),
                 Text(
-                  '25.2',
+                  bmiResult!,
                   style: KBMITextStyle
                 ),
                 Column(
@@ -47,7 +48,7 @@ class ResultPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(15),
                   child: Text(
-                      'You Have a Normal weight , Good Job!',
+                      interpretation!,
                       style: KBodyTextStyle,
                     textAlign: TextAlign.center,
                   ),
